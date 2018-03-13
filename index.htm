@@ -86,55 +86,37 @@ body  {
 <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryTooltip.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js" type="text/javascript"></script>
 <link href="../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
 <link href="SpryAssets/SpryTooltip.css" rel="stylesheet" type="text/css" />
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css" />
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css" />
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="twoColElsLt">
 
 <div id="container">
   <div id="sidebar1">
-<ul id="Menu" class="MenuBarVertical">
-  <li><a href="index.htm" title="Home">Home</a></li>
-  <li><a href="WhatToBring.htm" title="What To Bring">What To Bring</a></li>
-  <li><a href="#">First 5 Days</a></li>
-</ul>
-<h3>&nbsp;</h3>
-  <!-- end #sidebar1 --></div>
+    <button id="Button1">Button</button>
+    <div class="dropdown"> </div>
+<!-- end #sidebar1 --></div>
   <div id="mainContent">
     <h1>Home          (English Project)<img src="images/Lewes_Priory_School_logo.png" width="52" height="47" /></h1>
     <p>How To Survive In Siberia</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <div id="TabbedPanels1" class="TabbedPanels">
-      <ul class="TabbedPanelsTabGroup">
-        <li class="TabbedPanelsTab" tabindex="0">Tab 1</li>
-        <li class="TabbedPanelsTab" tabindex="0">Tab 2</li>
-      </ul>
-      <div class="TabbedPanelsContentGroup">
-        <div class="TabbedPanelsContent">Content 1</div>
-        <div class="TabbedPanelsContent">Content 2</div>
-      </div>
-    </div>
+    <div id="TabbedPanels1" class="TabbedPanels"> </div>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <div id="Accordion1" class="Accordion" tabindex="0">
-      <div class="AccordionPanel">
-        <div class="AccordionPanelTab">Label 1</div>
-        <div class="AccordionPanelContent">Content 1</div>
-      </div>
-      <div class="AccordionPanel">
-        <div class="AccordionPanelTab">Label 2</div>
-        <div class="AccordionPanelContent">Content 2</div>
-      </div>
-    </div>
+<p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p><span id="sprytrigger1">Tooltip trigger goes here.</span></p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -148,7 +130,6 @@ body  {
       <!-- end #container -->
   </dd>
 </div>
-<div class="tooltipContent" id="sprytooltip1">Tooltip content goes here.</div>
 <script type="text/javascript">
 <!--
 var MenuBar1 = new Spry.Widget.MenuBar("Menu", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
@@ -156,6 +137,9 @@ var MenuBar1 = new Spry.Widget.MenuBar("Menu", {imgRight:"../SpryAssets/SpryMenu
 var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 var Accordion1 = new Spry.Widget.Accordion("Accordion1");
 var sprytooltip1 = new Spry.Widget.Tooltip("sprytooltip1", "#sprytrigger1");
+$(function() {
+	$( "#Button1" ).button(); 
+});
 //-->
 </script>
 </body>
