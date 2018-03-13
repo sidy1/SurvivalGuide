@@ -145,8 +145,9 @@ h6 {
 }
 
 #header .top_banner{
-	background:url(../images/header.jpg) no-repeat left top;
-	height:190px;
+	background:url(../images/flag2.gif);
+	height:155px;
+	width:px;
 	padding:60px 95px 0 95px;
 	border:#6C8286 solid 1px;
 	margin-bottom:10px;
@@ -154,7 +155,7 @@ h6 {
 }
 
 #header h1 a {
-	color:#c3dae0;
+	color:#DF1717;
 	text-decoration: none;
 }
 
@@ -165,7 +166,7 @@ h6 {
 #header p{
 	font-size:16px;
 	margin-left:1px;
-	color:#c3dae0;
+	color:#DF1717;
 }
 
 .navigation{
