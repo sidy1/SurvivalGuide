@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	outline:0;
 	font-size:100%;
 	vertical-align:baseline;
-	background:none;
+	background-color:#background-color;
 }
 
 ol, ul {
@@ -31,7 +31,7 @@ table {
 }
 
 input, textarea, select {
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"sans-serif;
 	vertical-align:middle;
 	padding:0;
 	margin:0;
@@ -48,8 +48,8 @@ body {
 	font-size:13px;
 	line-height:21px;
 	color:#9FB1B2;
-	font-family:Arial, Helvetica, sans-serif;
-	background-color:#212b2d;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	background-color:#032432;
 }
 
 h1, h2, h3, h4, h5, h6 {
